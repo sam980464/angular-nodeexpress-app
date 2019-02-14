@@ -1,0 +1,135 @@
+input[type=checkbox].css-checkbox {
+	display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:35px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:30px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -30px;
+}
+
+label.css-label {
+	background-image:url(../images/tick_sprite.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].css-checkbox-yellow {
+	display:none;
+}
+
+input[type=checkbox].css-checkbox-yellow + label.css-label-yellow {
+	padding-left:35px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 -60px;
+	font-size:30px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox-yellow:checked + label.css-label-yellow {
+	background-position: 0 -90px;
+}
+
+input[type=checkbox].css-checkbox-yellow:disabled + label.css-label-yellow {
+	background-position: 0 -116px;
+}
+
+label.css-label-yellow {
+	background-image:url(../images/tick_sprite.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].css-checkbox-red {
+	display:none;
+}
+
+input[type=checkbox].css-checkbox-red + label.css-label-red {
+	padding-left:35px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 -143px;
+	font-size:30px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox-red:checked + label.css-label-red {
+	background-position: 0 -173px;
+}
+
+input[type=checkbox].css-checkbox-red:disabled + label.css-label-red {
+	background-position: 0 -199px;
+}
+
+label.css-label-red {
+	background-image:url(../images/tick_sprite.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].css-checkbox-green {
+	display:none;
+}
+
+input[type=checkbox].css-checkbox-green + label.css-label-green {
+	padding-left:35px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 -227px;
+	font-size:30px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox-green:checked + label.css-label-green {
+	background-position: 0 -257px;
+}
+
+input[type=checkbox].css-checkbox-green:disabled + label.css-label-green {
+	background-position: 0 -284px;
+}
+
+label.css-label-green {
+	background-image:url(../images/tick_sprite.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

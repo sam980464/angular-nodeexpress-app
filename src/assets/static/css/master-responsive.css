@@ -1,0 +1,839 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+	.desktop-visible {
+		display: block;
+	}
+
+	.desktop-invisible {
+		display: none;
+	}
+
+	.tablet-visible {
+		display: none;
+	}
+
+	.phone-horizontal-visible {
+		display: none;
+	}
+
+	.phone-visible {
+		display: none;
+	}
+
+	footer .infoBox:last-child {
+		margin-right: 0 !important;
+	}
+
+	.header2Menu {
+		display:none;
+	}
+}
+@media (max-width: 1100px) { 
+ 	.aboutUs2Holder {
+ 		display:none;
+ 	}
+
+ 	.aboutUs2RoleIntroBox {
+ 		float:none;
+ 		width: 100%;
+ 	}
+ 	.aboutUs2RoleIntroBoxRight {
+ 		float: none;
+ 		width: 100%;
+ 	}
+
+ 	.aboutUs2ContentHolder {
+ 		height: auto;
+ 	}
+
+ 	#overallSeparator {
+ 		display:none;
+ 	}
+
+ 	.aboutUs2RoleIntroNaviHolder,.aboutUs2RoleIntroBox h1, .aboutUs2RoleIntroBoxRight h1 {
+ 		max-width: 438px;
+ 	}
+
+ 	.aboutUs2RoleIntroNaviHolder {
+ 		display:none;
+ 	}
+}
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {
+	.desktop-visible {
+		display: block;
+	}
+
+	.desktop-invisible {
+		display: none;
+	}
+
+	.tablet-visible {
+		display: block;
+	}
+
+	.phone-horizontal-visible {
+		display: none;
+	}
+
+	.phone-visible {
+		display: none;
+	}
+
+	.swipe-wrap .image {
+		height:400px;
+	}
+
+	.anis-signup-pr {
+		margin-top: 20px;
+	}
+
+	.header2Navi {
+		padding-right: 10px;
+	}
+
+	.header2Navi.anis-profileDropDownIcon {
+		padding-right: 30px;
+	}
+
+	.header2Logo  {
+		width:200px;
+		height:30px;
+		margin-top: 0px;
+		background-size:contain;
+		top:9px;
+		/*background:url(/static/images/mobile_logo.png) no-repeat;*/
+		background:url(/static/images/CrossTrackHeader.jpg) no-repeat;
+		display:inline-block;
+		margin-left: 16px;
+	}
+
+	.header2BotPadded {
+		text-align: left;
+	}
+
+	#anis-account {
+		margin-top: 20px
+	}
+
+	.anis-job-type-box {
+		width: 100%;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+
+	}
+
+	.anis-job-type {
+		width: 32.6%;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+
+	.anis-job-type-divider {
+		width: 1%;
+	}
+
+	.roleIntroBox {
+		float: none;
+		width: 100%;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.roleInfoBtnLearnMore {
+		left: 30%;
+	}
+
+	.roleInfoBtnSignUp {
+		left: 60%;
+	}
+
+	.fb-like-box {
+		display: none !important;
+	}
+
+	.readBlog {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.courseAdvert {
+		float: none;
+		width: 100%;
+	}
+
+	.readBlogButton {
+		left: 45%;
+	}
+
+	.profileDetailsContainer {
+		float: none;
+		width: 100% !important;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+
+	.profileRatingDetails {
+		float: none;
+		width: 100% !important;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+
+	.bodysubcontainer930 {
+		padding-right: 2% !important;
+	}
+
+	.profileRatingDetails div:not(.floatLeft .profileRatingValue) {
+		float: none;
+		clear: both;
+	}
+
+	.profileRatingValue {
+		margin-left: 10%;
+	}
+
+	.surveyContainer {
+		display:none;
+	}
+
+	.statusContainer .column {
+		width: 25%;
+		margin-bottom: 20px;
+	}
+
+	.statusContainer .column:nth-child(4) {
+		border-right: none;
+	}
+
+	.statusContainer .column:nth-child(5) {
+		clear: both;
+		
+	}
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 936px) {
+	.headerSpace {
+		height: 40px;
+	}
+
+	.footerSpace {
+		height: 69px;
+	}
+
+	.roleInfoBtnLearnMore {
+		left: 20%;
+	}
+
+	.readBlogButton {
+		left: 40%;
+	}
+
+	.anis-pj-info-form ul {
+		height: auto;
+	}
+
+	.desktop-visible {
+		display: none;
+	}
+
+	.desktop-invisible {
+		display: block;
+	}
+
+	.tablet-visible {
+		display: none;
+	}
+
+	.phone-horizontal-visible {
+		display: block;
+	}
+
+	.phone-visible {
+		display: none;
+	}
+
+	footer .infoBox {
+		width: 44%;
+		max-width: none;
+		margin-left: 4%;
+		margin-right: 0;
+		height: auto;
+		min-height: 0;
+	}
+
+	footer .footerLogo{
+		display: block;
+	}
+
+	footer .infoBox:nth-child(3) {
+		clear: both;
+	}
+
+	.swipe-wrap .image {
+		height:300px;
+	}
+
+	.anis-signup-pr-section {
+		float: none;
+		width: 100%;
+		height: 100px;
+		clear: both;
+	}
+
+
+	.anis-signup-pr-section img {
+		width: 83px;
+		height: 91px;
+		margin: 30px 5%;
+	}
+
+	.anis-signup-pr-section div {
+		margin-left: 20px;
+		margin-right: 0px;
+	}
+
+	.anis-signup-pr-section img, .anis-signup-pr-section div {
+		float: left; 
+	}
+
+	.anis-signup-pr-section h1, .anis-signup-pr-section p {
+		float: left; 
+		width: 50%;
+		text-align: left;
+		margin-left: 5%;
+	}
+
+	.anis-job-type-divider {
+		display: none;
+	}
+
+	.anis-signup-pr {
+		margin-top: 20px;
+	}
+
+	.header2TopBar {
+		height: 2px;
+	}
+
+	.header2BotPadded {
+		text-align: left;
+	}
+
+	.header2Menu {
+		display:block;
+	}
+
+	.header2BotBar {
+		height: 50px;
+	}
+
+	.header2Search {
+		top: 18px;
+		right: 60px;
+	}
+
+	.header2Logo  {
+		width:200px;
+		height:30px;
+		margin-top: 0px;
+		background-size:contain;
+		top:9px;
+	}
+
+
+	.anis-job-type {
+		float: none;
+		width: 100%;
+		text-align:left;
+		height: 130px;
+	}
+
+	.anis-job-type-box .anis-job-type-divider {
+		display: block !important;
+		width: 100%;
+		height: 10px;
+		background: url('../images/divider_line_horizontal.jpg');
+	}
+
+	.job-type-checkbox {
+		float: left;
+		margin-top: 5px;
+		height: 95px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.anis-job-type h1 {
+ 		margin-bottom: 0;
+ 	}
+
+ 	.anis-job-type p ï½›
+ 		margin-bottom: 0px !important;
+ 	ï½
+
+ 	#goNext, #goNext0 {
+ 		margin: 10px auto !important;
+ 	}
+
+ 	.anis-job-type-box {
+ 		margin-bottom: 10px !important;
+ 	}
+
+ 	.anis-post-job-sr ul li.anis-connect {
+ 		display: none;
+ 	}
+
+ 	.anis-post-job-sr ul li label {
+ 		text-align: left;
+ 	}
+
+ 	.anis-post-job-sr ul li {
+ 		float: none;
+ 		clear: both;
+ 		text-align: left;
+ 		padding-left: 10px;
+ 		padding-top: 0px;
+ 	}
+
+ 	#senderAddressID, #receiverAddressID {}
+
+ 	.anis-post-job-sr {
+		margin: 0 auto !important;
+	}
+
+	.anis-post-job-sr ul li {
+		width: 80%;
+	}
+
+	#senderManual {
+		display: none;
+	}
+
+	#receiverManual {
+		width:100%;
+		float:none;
+	}
+
+	.nbsp {
+		display: none;
+		padding: 0 !important;
+	}
+
+	.anis-pj-info-form {
+		margin-top: 0;
+	}
+
+	.anis-pj-info-form ul li:nth-child(1) {
+		margin: 2% 2% 0 0;
+	}
+
+	.anis-post-job-sr ul li label[for=senderAddressID],.anis-post-job-sr ul li label[for=receiverAddressID]{
+		margin-top: 10px;
+	}
+
+	.anis-post-job-sr .anis-signup-acc-nav {
+		margin: 20px 10%;
+	}
+
+	.anis-pj-info-form ul li:nth-child(2) {
+		width: 80%;
+	}
+
+	#senderFormMobile label.valid,#senderForm label.valid,#receiverForm label.valid {
+		top: -30px;
+		right: 30px !important;
+	}
+
+	#senderFormMobile label.error:after,#senderForm label.error:after,#receiverForm label.error:after {
+		top: -30px;
+		right: 30px !important;
+	}
+
+	.anis-pj-info-form ul {
+		margin-bottom: 0;
+	}
+
+	.anis-pj-info-form ul.anis-pj-info-unitNo li input {
+		margin-top: 17px;
+	}
+
+	.anis-pc-section-box .anis-pc-section {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+
+	.anis-pc-section-box {
+		height: auto;
+		background: none;
+	}
+
+	.anis-pc-section-box br {
+		height: 0;
+	}
+
+	.anis-pc-section h3 {
+		margin-bottom: 0;
+		background: url('../images/divider_line_horizontal.jpg') repeat-x;
+		background-position: 0 30px;
+	}
+
+	.anis-pc-section input {
+		margin: 10px auto;
+	}
+
+	.anis-rec-price {
+		margin: 10px auto;
+	}
+
+	.anis-pc-payment .anis-pc-payment-terms,.anis-pc-payment .anis-pc-payment-invoice {
+		float: none;
+		width: 90%;
+	}
+
+	.anis-pc-navigate button.anis-pc-back {
+		margin-left: 10%;
+		float: none;
+	}
+
+	.anis-pc-navigate button.anis-pc-confirm {
+		margin-left: 10%;
+		float: none;
+	}
+
+	.anis-pc-navigate {
+		text-align: left;
+		margin: 0;
+	}
+
+	.readBlogButton {
+		left: 40%;
+	}
+
+	.contactFormItem {
+		width: 100%;
+		float: none;
+	}
+
+	.deliveryRatesSmallBox {
+		float: none !important;
+		width: 100%;
+		clear: both;
+	}
+
+	.vertical_divider {
+		display:none;
+	}
+
+	.buyCreditsHolder  .creditSelection {
+		float: none;
+		width: 100%;
+		clear:both;
+	}	
+
+	.buyCreditsHolder .paymentSelection {
+		float:none;
+		width:100%;
+		clear:both;
+		padding-top:5px;
+		margin-bottom: 20px;
+	}
+
+	.buyCreditsHolder .paymentSelection .currentCreditBox {
+		margin-top: 20px;
+	}
+
+	.container .bottomNavi .anis-payment-agreement.floatLeft {
+		float: none;
+		width: 95% !important;
+		margin-left: 5%;
+	}
+
+	.container .bottomNavi .floatRight {
+		float: none;
+		clear: both;
+		width: 95%;
+		float: none;
+		margin-left: 5%;
+	}
+
+	.container .bottomNavi {
+		padding-bottom: 20px;
+	}
+
+	.container .bottomNavi .anis-pc-navigate button.anis-pc-confirm {
+		margin-left: -12px !important;
+		padding: 0 20px;
+	}
+
+	.anis-signup-acc-form, .anis-signup-ptcr-form {
+ 	padding: 0 0 0 5%;
+ 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 105%;
+ }
+
+ .anis-signup-acc-nav {
+ 	width: 90%;
+ 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin: 40px 0;
+ }
+
+ .anis-signup-acc-form ul li:first-child, .anis-signup-ptcr-form ul li:first-child {
+ 	float:none;
+ 	text-align:left;
+ 	clear:both;
+ 	margin-top: 29px;
+ 	height: 24px;
+ }
+
+ .anis-signup-acc-form ul li label, .anis-signup-ptcr-form ul li label {
+ 	text-align: left;
+ }
+
+ .anis-signup-acc-form ul li:last-child, .anis-signup-ptcr-form ul li:last-child {
+ 	float:none;
+ 	text-align:left;
+ 	clear:both;
+ }
+
+ .anis-signup-acc-nav-back {
+ 	width: auto;
+ 	min-width: 40%;
+ }
+
+ .anis-signup-acc-nav-next {
+ 	width: auto;
+ 	min-width: 40%;
+ }
+
+ .anis-pc-navigate {
+ 	width: 90%;
+ 	min-width: 40%;
+ 	margin:40px 0; 
+ }
+
+ .anis-signup-acc-form ul li input, .anis-signup-ptcr-form ul li input {
+ 	width: 80%;
+ }
+
+	
+
+}
+
+@media (max-width: 600px) {
+	.add_new_btn {
+		padding:5px 20px;
+		border: 2px solid #000;
+		max-width: 50px;
+		margin-top: -20px;
+		cursor: pointer;
+		z-index:200;
+		float: right;
+		margin-right: 30px;
+	}
+
+	.delete_selected_btn {
+		display:none;
+	}
+
+	.add_new_btn:after {
+		content:'';
+	}
+
+	.delete_selected_btn:after {
+		content: '';
+	}
+	.buyCreditsHolder {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.buyCreditsHolder .creditSelection .creditBox {
+		float: none;
+		width: 100%;
+		height: 90px;
+		padding:10px;
+		text-align: left;
+		clear:both;
+		font-size:40px;
+		line-height:70px;
+	}
+
+	.buyCreditsHolder .creditSelection .creditBox span {
+		display: inline-block;
+		float: right;
+		min-width:30%;
+	}
+
+  	.job_row div.cell:nth-child(3),.job_row div.cell:nth-child(4),.job_details div:nth-child(3),.job_details div:nth-child(4)  {
+		display: none;
+	}
+
+	.address_row div.cell:nth-child(1),.job_details div:nth-child(1),.address_row div.cell:nth-child(4),.job_details div:nth-child(4)  {
+		display: none;
+	}
+
+	.address_row .delete_btn {
+		display: block;
+	}
+
+	.address_row div.action {
+		width: 40%;
+	}
+
+	.address_details div {
+		margin-left: 15%;
+	}
+
+	.job_row div.cell {
+		width: 25%;
+	}
+
+	.job_details div {
+		width: 50%;
+	}
+
+
+	.roleInfoBtnLearnMore {
+		left: 10%;
+	}
+ .readBlogButton {
+		left: 35%;
+  }
+ 
+
+ label.valid {
+  right: 0 !important;
+ }
+
+ label.error:after {
+  right: 6px !important;
+ }
+
+ .anis-signup-ptcr-form .postal {
+ 	height: 61px;
+ }
+
+ #companyAddress {
+ 	height: 93px;
+ }
+
+ .anis-signup-acc-form ul li input, .anis-signup-ptcr-form ul li input {
+ 	width: 100%;
+ }
+
+ #gender {
+ 	margin-right: 50%;
+ }
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.aboutUsUL {
+		left: 10%;
+	}
+	.contactFormHolder {
+		width: 100% !important;
+		float: none;
+		clear: both;
+	}
+
+	.contactAddressHolder {
+		width: 80% !important;
+		float: none;
+		clear: both;
+	}
+
+	.desktop-visible {
+		display: none;
+	}
+
+	.tablet-visible {
+		display: none;
+	}
+
+	.phone-horizontal-visible {
+		display: none;
+	}
+
+	.phone-visible {
+		display: block;
+	}
+
+	footer .infoBox {
+		width: 92%;
+		margin: 0 auto !important;
+	}
+
+	footer .infoBox {
+		float: none;
+		clear: both;
+	}
+
+	.swipe-wrap .image {
+		height:200px !important;
+	}
+	
+	form[name=frmLogin] {
+		text-align: center;
+	}
+
+	form[name=frmLogin] label {
+		display: none;
+	}
+
+	.anis-login-section {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.anis-login-section input {
+		float: none !important;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
+
+	.anis-signup-pr-section img {
+		margin: 30px 2%;
+	}
+
+	.anis-signup-pr-section h1 {
+		margin-bottom: 0;
+	}
+
+	.header2Logo  {
+		width:60px;
+		height:30px;
+		margin-top: 0px;
+		background-size:contain;
+		top:9px;
+	}
+
+	.statusContainer .column {
+		width: 50%;
+	}
+
+	.statusContainer .column:nth-child(2),.statusContainer .column:nth-child(6) {
+		border-right: none;
+	}
+
+	.statusContainer .column:nth-child(3),.statusContainer .column:nth-child(5),.statusContainer .column:nth-child(7) {
+		clear: both;
+		
+	}
+
+}
