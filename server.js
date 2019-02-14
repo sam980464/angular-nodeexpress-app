@@ -14,14 +14,14 @@ res.sendFile(path.join(__dirname+'/dist/demo-deploy/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
-
+//mysql://bff1ea93a381dc:5f079d48@us-cdbr-iron-east-03.cleardb.net/heroku_7e369476949ac20?reconnect=true
 
 const mysql = require('mysql');
 const dbconfig = {
     host     : 'us-cdbr-iron-east-03.cleardb.net',
-    user     : 'b813e86be3bf41',
-    password : '47503a61',
-    database : 'heroku_5a8c23471a3edc3'
+    user     : 'bff1ea93a381dc',
+    password : '5f079d48',
+    database : 'heroku_7e369476949ac20'
 }
 
 
