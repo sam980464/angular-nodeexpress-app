@@ -4,7 +4,7 @@ import { Http, Headers, Response, RequestOptions } from '@angular/http';
 
 @Injectable()
 export class HttpRequestServices {
-    private _BASE_URL = "";
+    private _BASE_URL = "/";
     private _HEADERS = new Headers({ 'Content-Type': 'application/json' });
     private _OPTIONS = new RequestOptions({ headers: this._HEADERS });
     private _BODY_STRING = "";
