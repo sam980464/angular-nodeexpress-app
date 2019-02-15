@@ -5,6 +5,11 @@ const path = require('path');
 
 const app = express();
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/demo-deploy'));
 

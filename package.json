@@ -29,7 +29,8 @@
     "path": "^0.12.7",
     "rxjs": "6.0.0",
     "typescript": "~2.7.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+	"body-parser": "^1.18.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.8",
@@ -52,7 +53,8 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2",
-	"mysql": "^2.16.0"
+	"mysql": "^2.16.0",
+	"body-parser": "^1.18.3"
   },
   "engines": {
     "node": "11.9.0",
