@@ -10,8 +10,8 @@ export class HttpRequestServices {
     private _BODY_STRING = "";
 
     //Apis
-    private _LOGIN = "api_login"; 
-    private _REGISTER = "api_signup";
+    private _LOGIN = "api/login"; 
+    private _REGISTER = "api/signup";
 
     constructor(private http: Http) { }
     login(value: any) {
