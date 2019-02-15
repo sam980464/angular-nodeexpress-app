@@ -30,7 +30,7 @@ connection.connect(function(err) {
     if (err) throw err;
 });
 
-app.post("/login", (req, res, next) => {
+app.post("/api_login", (req, res, next) => {
    
    var username = req.body.uname;
    var pass = req.body.password;
@@ -49,7 +49,7 @@ app.post("/login", (req, res, next) => {
 });
 
 
-app.post("/signup", (req, res, next) => {
+app.post("/api_signup", (req, res, next) => {
    
    var email  = req.body.email;
    var mobile = req.body.mobile;
