@@ -24,9 +24,9 @@ res.sendFile(path.join(__dirname+'/dist/demo-deploy/index.html'));
 const mysql = require('mysql');
 const dbconfig = {
     host     : 'us-cdbr-iron-east-03.cleardb.net',
-    user     : 'bff1ea93a381dc',
-    password : '5f079d48',
-    database : 'heroku_7e369476949ac20'
+    user     : 'b4e08b7f3522a3',
+    password : 'f6f1b50e',
+    database : 'heroku_16b639d2d341f35'
 }
 
 
