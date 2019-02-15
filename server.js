@@ -32,7 +32,10 @@ const dbconfig = {
 
 const connection  = mysql.createConnection(dbconfig);
 connection.connect(function(err) {
-    if (err) throw err;
+    if (err){
+		 return console.error('error: ' + err.message);
+	}
+	 console.log('Connected to the MySQL server.');
 });
 
 app.post("/api/login", (req, res, next) => {
