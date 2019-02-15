@@ -1,34 +1,31 @@
-<div id="bodyWrap">
-    <app-header></app-header>
-    <div class="section">
-        <div class="containerNoBorder" style="border-bottom: 1px solid #000;">
-            <div class="anis-login-section">
-                <h1 style="margin-bottom:35px;height:30px;">HELLO AGAIN!</h1>
-                <div class="alert alert-warning" style="display:none;">
-                    <span></span>
-                    <button type="button" class="close" aria-hidden="true" onclick="$('.alert').hide();">&times;</button>
-                </div>
-                <div class="row">
-                    <form [formGroup]="loginModel" (ngSubmit)="dologin(loginModel.value)">
-                        <div class="row">
-                            <label for='anis-username'>USERNAME</label>
-                            <input [formControl]="loginModel.controls['uname']" id="anis-username" name="uname" type="text"
-                                placeholder="username">
-                        </div>
-                        <div class="row">
-                            <label for='anis-password'>PASSWORD</label>
-                            <input id="anis-password" [formControl]="loginModel.controls['password']" name="password"
-                                type="password" placeholder="at least 8 characters">
-                        </div>
-                        <div class="row">
-                            <button type="submit" [disabled]="!loginModel.valid" class="btn btn-success">LOGIN</button>
-                        </div>
-                    </form>
-                </div>
-                <p><a href="/forgot">Forgot password?</a></p>
-                <p>Not a member yet? <a href="/new_signup">Join here</a></p>
+<div class="section">
+    <div class="containerNoBorder" style="border-bottom: 1px solid #000;">
+        <div class="anis-login-section">
+            <h1 style="margin-bottom:35px;height:30px;">HELLO AGAIN!</h1>
+            <div class="alert alert-warning" style="display:none;">
+                <span></span>
+                <button type="button" class="close" aria-hidden="true" onclick="$('.alert').hide();">&times;</button>
             </div>
+            <div class="row">
+                <form [formGroup]="loginModel" (ngSubmit)="dologin(loginModel.value)">
+                    <div class="row">
+                        <label for='anis-username'>USERNAME</label>
+                        <input [formControl]="loginModel.controls['uname']" id="anis-username" name="uname" type="text"
+                            placeholder="username">
+                    </div>
+                    <div class="row">
+                        <label for='anis-password'>PASSWORD</label>
+                        <input id="anis-password" [formControl]="loginModel.controls['password']" name="password" type="password"
+                            placeholder="at least 8 characters">
+                    </div>
+                    <div class="row">
+                        <button type="submit" [disabled]="!loginModel.valid" class="btn btn-success">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+            <p><a href="/forgot">Forgot password?</a></p>
+            <p>Not a member yet? <a href="/new_signup">Join here</a></p>
         </div>
-
     </div>
+
 </div>

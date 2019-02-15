@@ -1,213 +1,221 @@
-<div id="bodyWrap">
-    <app-header></app-header>
-    <div class="section">
-        <div class="anis-post-job-head anis-sign-up-head desktop-visible">
-            <div class="col-md-10" style="left:15%">
-                <ul>
-                    <li><a href="#">SIGN UP</a></li>
+<div class="section">
+    <div class="anis-post-job-head anis-sign-up-head desktop-visible">
+        <div class="col-md-10" style="left:15%">
+            <ul>
+                <li><a href="#">SIGN UP</a></li>
 
-                </ul>
-            </div>
+            </ul>
         </div>
-        <div class="containerNoBorder" style="text-align:center;">
-            <div class="container" style="border-bottom:none;">
-                <div class="alert alert-warning" style="display:none;margin:10px auto 20px auto;width:80%;max-width:400px;">
-                    <span>Warning</span>
-                    <button type="button" class="close" aria-hidden="true" onclick="$('.alert').hide();">×</button>
-                </div>
-                <div id="slider" class="swipe" style="visibility: visible;">
-                    <div class="swipe-wrap" style="width: 3213px;">
-                        <!-- Star of Account Section -->
-                        <div class="wrap" data-index="0" style="width: 1071px; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-                            <form [formGroup]="signupModel" (ngSubmit)="dosignup(signupModel.value)">
-                                <div class="row">
-                                    <label for='anis-email'>EMAIL</label>
-                                    <input [formControl]="signupModel.controls['email']" id="anis-email" name="email"
-                                        type="text" placeholder="email">
+    </div>
+    <div class="containerNoBorder" style="text-align:center;">
+        <div class="container" style="border-bottom:none;">
+            <div class="alert alert-warning" style="display:none;margin:10px auto 20px auto;width:80%;max-width:400px;">
+                <span>Warning</span>
+                <button type="button" class="close" aria-hidden="true" onclick="$('.alert').hide();">×</button>
+            </div>
+            <div id="slider" class="swipe">
+                <div class='swipe-wrap'>
+                    <!-- Star of Account Section -->
+                    <div class="wrap" style="
+                        visibility: visible;
+                    ">
+                        <form name="signForm1" id="signForm1" [formGroup]="signupModel" (ngSubmit)="dosignup(signupModel.value)">
+                            <div id="anis-account">
+                                <div class="anis-signup-acc-form">
+                                    <ul>
+                                        <li><label for='email'>EMAIL</label></li>
+                                        <li><input [formControl]="signupModel.controls['email']" id="email" name="email"
+                                                type="text" placeholder="email"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="mobile">Mobile Number</label></li>
+                                        <li><input [formControl]="signupModel.controls['mobile']" id="anis-mobile" name="mobile"
+                                                type="text" placeholder="mobile"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for='anis-username'>USERNAME</label></li>
+                                        <li><input [formControl]="signupModel.controls['uname']" id="anis-username"
+                                                name="uname" type="text" placeholder="username"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for='anis-password'>PASSWORD</label></li>
+                                        <li><input id="anis-password" [formControl]="signupModel.controls['password']"
+                                                name="password" type="password" placeholder="at least 8 characters"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="repassword">Re-type Password</label></li>
+                                        <li><input id="anis-confpassword" [formControl]="signupModel.controls['confirmPass']"
+                                                name="repassword" type="password" placeholder="at least 8 characters"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div class="anis-signup-acc-nav" style="margin-top:10px">
+                                                <button class="anis-signup-acc-nav-next" [disabled]="!signupModel.valid"
+                                                    type="submit">Sign
+                                                    Up&gt;</button>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="row">
-                                    <label for='anis-mobile'>Mobile</label>
-                                    <input [formControl]="signupModel.controls['mobile']" id="anis-mobile" name="mobile"
-                                        type="text" placeholder="mobile">
+                            </div>
+                        </form>
+                        <form style="display: none" name="signForm1" id="signForm1" onsubmit="step2();" novalidate="novalidate">
+                            <div id="anis-account">
+                                <div class="anis-signup-acc-form">
+                                    <ul>
+                                        <li><label for="email">Email Address</label></li>
+                                        <li><input type="text" id="email" name="email"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="hp">Mobile Number</label></li>
+                                        <li><input type="text" id="hp" name="hp" placeholder="+65" maxlength="8"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="username">Username</label></li>
+                                        <li><input type="text" id="username" name="username"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="password">Password</label></li>
+                                        <li><input type="password" id="password" name="password" placeholder="minimum 6 characters"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="repassword">Re-type Password</label></li>
+                                        <li><input type="password" id="repassword" name="repassword" placeholder="re-enter password"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <div class="anis-signup-acc-nav" style="margin-top:10px">
+                                                <button class="anis-signup-acc-nav-next" id="goNext1" type="submit">Next&gt;</button>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="row">
-                                    <label for='anis-username'>USERNAME</label>
-                                    <input [formControl]="signupModel.controls['uname']" id="anis-username" name="uname"
-                                        type="text" placeholder="username">
-                                </div>
-                                <div class="row">
-                                    <label for='anis-password'>PASSWORD</label>
-                                    <input id="anis-password" [formControl]="signupModel.controls['password']" name="password"
-                                        type="password" placeholder="at least 8 characters">
-                                </div>
-                                <div class="row">
-                                    <label for='anis-password'>Confirm PASSWORD</label>
-                                    <input id="anis-confpassword" [formControl]="signupModel.controls['confirmPass']"
-                                        name="confirmPass" type="password" placeholder="at least 8 characters">
-                                </div>
-                                <div class="row">
-                                    <button class="anis-signup-acc-nav-next" [disabled]="!signupModel.valid" type="submit">Sign
-                                        Up&gt;</button>
-                                </div>
-                            </form>
-                            <form style="display: none" name="signForm1" id="signForm1" onsubmit="step2();" novalidate="novalidate">
-                                <div id="anis-account">
-                                    <div class="anis-signup-acc-form">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- End Of Account Section -->
+
+                    <!-- Star of Account Section -->
+                    <div class="wrap" data-index="1" style="width: 1071px; left: -1071px; transition-duration: 0ms; transform: translate(1071px, 0px) translateZ(0px);">
+                        <form name="signForm2" id="signForm2" novalidate="novalidate">
+                            <div id="anis-particular">
+                                <input type="hidden" id="tnc" name="tnc" value="">
+                                <div class="anis-signup-ptcr-form">
+                                    <ul>
+                                        <li><label for="fullname">Full name</label></li>
+                                        <li><input type="text" id="fullname" name="fullname"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="companyName">Company Name</label></li>
+                                        <li><input type="text" id="companyName" name="companyName" placeholder="optional"
+                                                value=""></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="companyPostal">Company Address</label></li>
+                                        <li><input type="text" placeholder="Postal Code" id="companyPostal" name="companyPostal"
+                                                maxlength="6" onblur="javascript:autoFillAddress('companyPostal','addressCompany');"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="companyAddress">&nbsp;</label></li>
+                                        <li><input type="text" id="addressCompany" name="address" class="companyAddress"
+                                                placeholder="Enter postal code to retrieve address..."></li>
+                                    </ul>
+                                    <ul style="margin-top: -30px;">
+                                        <li><label for="companyUnitNo">&nbsp;</label></li>
+                                        <li><input type="text" placeholder="Unit Number" id="companyUnitNo" onkeypress="return onlyNumbersHeshHyphen(event);"
+                                                name="companyUnitNo"></li>
+                                    </ul>
+                                    <ul>
+                                        <li><label for="companyWeb">Company Website</label></li>
+                                        <li><input type="text" id="companyWeb" name="companyWeb" placeholder="optional"
+                                                value=""></li>
+                                    </ul>
+                                    <div class="anis-signup-ptcr-agreement">
+                                        <input type="checkbox" name="tncCheckBox" id="tncCheckBox" class="css-checkbox"><label
+                                            for="tncCheckBox" class="css-label">
+                                            <span class="anis-agreement">I've read and agree to the <a class="fancybox_link fancybox.iframe"
+                                                    href="/privacy_policy">Privacy Policy</a> and <a class="fancybox_link fancybox.iframe"
+                                                    href="/terms_of_use">Terms of Service</a></span>
+                                        </label></div>
+                                    <!-- HIDDEN -->
+                                    <div id="hidden" style="display:none">
                                         <ul>
-                                            <li><label for="email">Email Address</label></li>
-                                            <li><input type="text" id="email" name="email"></li>
+                                            <li><label for="nric">NRIC Number</label></li>
+                                            <li><input type="text" id="nric" name="nric" maxlength="9" value="123456789"></li>
                                         </ul>
                                         <ul>
-                                            <li><label for="hp">Mobile Number</label></li>
-                                            <li><input type="text" id="hp" name="hp" placeholder="+65" maxlength="8"></li>
+                                            <li><label for="datepicker">Date of Birth</label></li>
+                                            <li><input type="text" name="dob" id="datepicker" placeholder="dd/mm/yyyy"
+                                                    value="21-02-1993" class="hasDatepicker"></li>
                                         </ul>
                                         <ul>
-                                            <li><label for="username">Username</label></li>
-                                            <li><input type="text" id="username" name="username"></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="password">Password</label></li>
-                                            <li><input type="password" id="password" name="password" placeholder="minimum 6 characters"></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="repassword">Re-type Password</label></li>
-                                            <li><input type="password" id="repassword" name="repassword" placeholder="re-enter password"></li>
-                                        </ul>
-                                        <ul>
+                                            <li><label for="gender">Gender</label></li>
                                             <li>
-                                                <div class="anis-signup-acc-nav" style="margin-top:10px">
-                                                    <button class="anis-signup-acc-nav-next" id="goNext1" type="submit">Next&gt;</button>
-                                                </div>
+                                                <select id="gender" name="gender">
+                                                    <option value="">--</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
                                             </li>
                                         </ul>
+                                        <ul>
+                                            <li><label for="referrer">Referrer's Mobile Number</label></li>
+                                            <li><input type="text" id="referrer" name="referrer" placeholder="optional (if any)"
+                                                    value="987654321"></li>
+                                        </ul>
+
+                                        <ul class="postal">
+                                            <li><label for="postal">Mailing Address</label></li>
+                                            <li><input type="text" placeholder="Postal Code" id="postal" name="postal"
+                                                    maxlength="6" onblur="javascript:autoFillAddress('postal','address');"></li>
+                                        </ul>
+                                        <ul class="">
+                                            <li style="width:203px;">&nbsp;</li>
+                                            <li><textarea id="address" name="address" placeholder="Enter postal code to retrieve address..."></textarea></li>
+                                        </ul>
+                                        <ul class="unitNo">
+                                            <li style="width:203px;">&nbsp;</li>
+                                            <li><input type="text" placeholder="Unit Number" id="unitNo" name="unitNo"></li>
+                                        </ul>
+                                        <ul>
+                                            <li><label for="vehicleType">Vehicle Type</label></li>
+                                            <li>
+                                                <select id="vehicleType" name="vehicleType">
+                                                    <option value="No Vehicle">No Vehicle</option>
+                                                    <option value="Motor Bike">Motor Bike</option>
+                                                    <option value="Hatchback Car">Hatchback Car</option>
+                                                    <option value="Car">Car</option>
+                                                    <option value="Van">Van</option>
+                                                    <option value="Lorry">Lorry</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><label for="vehicleNo">Vehicle Number</label></li>
+                                            <li><input type="text" id="vehicleNo" name="vehicleNo" value="123456"></li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div class="anis-pc-navigate">
+                                        <button class="anis-signup-ptcr-nav-next ladda-button" id="goLast" type="submit"
+                                            data-style="slide-up" data-spinner-color="#fff">Sign Up<span class="ladda-label"></span><span
+                                                class="ladda-spinner"></span></button>
+                                        <button class="anis-signup-ptcr-nav-back anis-signup-acc-nav-back" id="goPrev2">Back
+                                            to Previous</button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div> <!-- End Of Particular Section -->
+                        </form>
                         <!-- End Of Account Section -->
+                    </div>
 
-                        <!-- Star of Account Section -->
-                        <div class="wrap" data-index="1" style="width: 1071px; left: -1071px; transition-duration: 0ms; transform: translate(1071px, 0px) translateZ(0px);">
-                            <form name="signForm2" id="signForm2" novalidate="novalidate">
-                                <div id="anis-particular">
-                                    <input type="hidden" id="tnc" name="tnc" value="">
-                                    <div class="anis-signup-ptcr-form">
-                                        <ul>
-                                            <li><label for="fullname">Full name</label></li>
-                                            <li><input type="text" id="fullname" name="fullname"></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="companyName">Company Name</label></li>
-                                            <li><input type="text" id="companyName" name="companyName" placeholder="optional"
-                                                    value=""></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="companyPostal">Company Address</label></li>
-                                            <li><input type="text" placeholder="Postal Code" id="companyPostal" name="companyPostal"
-                                                    maxlength="6" onblur="javascript:autoFillAddress('companyPostal','addressCompany');"></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="companyAddress">&nbsp;</label></li>
-                                            <li><input type="text" id="addressCompany" name="address" class="companyAddress"
-                                                    placeholder="Enter postal code to retrieve address..."></li>
-                                        </ul>
-                                        <ul style="margin-top: -30px;">
-                                            <li><label for="companyUnitNo">&nbsp;</label></li>
-                                            <li><input type="text" placeholder="Unit Number" id="companyUnitNo"
-                                                    onkeypress="return onlyNumbersHeshHyphen(event);" name="companyUnitNo"></li>
-                                        </ul>
-                                        <ul>
-                                            <li><label for="companyWeb">Company Website</label></li>
-                                            <li><input type="text" id="companyWeb" name="companyWeb" placeholder="optional"
-                                                    value=""></li>
-                                        </ul>
-                                        <div class="anis-signup-ptcr-agreement">
-                                            <input type="checkbox" name="tncCheckBox" id="tncCheckBox" class="css-checkbox"><label
-                                                for="tncCheckBox" class="css-label">
-                                                <span class="anis-agreement">I've read and agree to the <a class="fancybox_link fancybox.iframe"
-                                                        href="/privacy_policy">Privacy Policy</a> and <a class="fancybox_link fancybox.iframe"
-                                                        href="/terms_of_use">Terms of Service</a></span>
-                                            </label></div>
-                                        <!-- HIDDEN -->
-                                        <div id="hidden" style="display:none">
-                                            <ul>
-                                                <li><label for="nric">NRIC Number</label></li>
-                                                <li><input type="text" id="nric" name="nric" maxlength="9" value="123456789"></li>
-                                            </ul>
-                                            <ul>
-                                                <li><label for="datepicker">Date of Birth</label></li>
-                                                <li><input type="text" name="dob" id="datepicker" placeholder="dd/mm/yyyy"
-                                                        value="21-02-1993" class="hasDatepicker"></li>
-                                            </ul>
-                                            <ul>
-                                                <li><label for="gender">Gender</label></li>
-                                                <li>
-                                                    <select id="gender" name="gender">
-                                                        <option value="">--</option>
-                                                        <option value="Male">Male</option>
-                                                        <option value="Female">Female</option>
-                                                    </select>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li><label for="referrer">Referrer's Mobile Number</label></li>
-                                                <li><input type="text" id="referrer" name="referrer" placeholder="optional (if any)"
-                                                        value="987654321"></li>
-                                            </ul>
-
-                                            <ul class="postal">
-                                                <li><label for="postal">Mailing Address</label></li>
-                                                <li><input type="text" placeholder="Postal Code" id="postal" name="postal"
-                                                        maxlength="6" onblur="javascript:autoFillAddress('postal','address');"></li>
-                                            </ul>
-                                            <ul class="">
-                                                <li style="width:203px;">&nbsp;</li>
-                                                <li><textarea id="address" name="address" placeholder="Enter postal code to retrieve address..."></textarea></li>
-                                            </ul>
-                                            <ul class="unitNo">
-                                                <li style="width:203px;">&nbsp;</li>
-                                                <li><input type="text" placeholder="Unit Number" id="unitNo" name="unitNo"></li>
-                                            </ul>
-                                            <ul>
-                                                <li><label for="vehicleType">Vehicle Type</label></li>
-                                                <li>
-                                                    <select id="vehicleType" name="vehicleType">
-                                                        <option value="No Vehicle">No Vehicle</option>
-                                                        <option value="Motor Bike">Motor Bike</option>
-                                                        <option value="Hatchback Car">Hatchback Car</option>
-                                                        <option value="Car">Car</option>
-                                                        <option value="Van">Van</option>
-                                                        <option value="Lorry">Lorry</option>
-                                                        <option value="Others">Others</option>
-                                                    </select>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li><label for="vehicleNo">Vehicle Number</label></li>
-                                                <li><input type="text" id="vehicleNo" name="vehicleNo" value="123456"></li>
-                                            </ul>
-                                        </div>
-                                        <br>
-                                        <div class="anis-pc-navigate">
-                                            <button class="anis-signup-ptcr-nav-next ladda-button" id="goLast" type="submit"
-                                                data-style="slide-up" data-spinner-color="#fff">Sign Up<span class="ladda-label"></span><span
-                                                    class="ladda-spinner"></span></button>
-                                            <button class="anis-signup-ptcr-nav-back anis-signup-acc-nav-back" id="goPrev2">Back
-                                                to Previous</button>
-                                        </div>
-                                    </div>
-                                </div> <!-- End Of Particular Section -->
-                            </form>
-                            <!-- End Of Account Section -->
-                        </div>
-
-                        <div class="wrap" data-index="2" style="width: 1071px; left: -2142px; transition-duration: 0ms; transform: translate(1071px, 0px) translateZ(0px);">
-                            <div style="padding-top:20px;">
-                                <img src="/static/images/icon_ThumbUp.jpg">
-                                <br>
-                                <h5>Your registration is a success!</h5>
-                                <h5>Please check your email for the activation link and <a href="/login">log in</a>.</h5>
-                            </div>
+                    <div class="wrap" data-index="2" style="width: 1071px; left: -2142px; transition-duration: 0ms; transform: translate(1071px, 0px) translateZ(0px);">
+                        <div style="padding-top:20px;">
+                            <img src="/static/images/icon_ThumbUp.jpg">
+                            <br>
+                            <h5>Your registration is a success!</h5>
+                            <h5>Please check your email for the activation link and <a href="/login">log in</a>.</h5>
                         </div>
                     </div>
                 </div>

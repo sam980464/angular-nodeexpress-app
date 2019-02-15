@@ -7,7 +7,7 @@ import { RegisterComponent } from './pages/register/register.component';
 //import { AuthGuard } from '';
 const appRouter: Routes = [
     {
-        path: '',
+        path: 'index',
         component: HomeComponent,
         pathMatch: 'full'
     },
@@ -21,7 +21,7 @@ const appRouter: Routes = [
         component: RegisterComponent,
         pathMatch: 'full'
     },
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'index' }
 ]
 
 export const Routing = RouterModule.forRoot(appRouter);

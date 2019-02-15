@@ -7,7 +7,11 @@ import { AppComponent } from './app.component';
 
 //Partials 
 import { HeaderComponent } from './partials/header/header.component';
+import { FooterComponent } from './partials/footer/footer.component';
+
+// Service
 import { HttpRequestServices } from './services/httprequest.services';
+import { AuthService } from './services/authentication.service';
 
 // Import Pages 
 import { HomeComponent } from './pages/home/home.component';
@@ -23,7 +27,8 @@ import { Routing } from './app.routing';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import { Routing } from './app.routing';
     Routing
   ],
   providers: [
-    HttpRequestServices
+    HttpRequestServices,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

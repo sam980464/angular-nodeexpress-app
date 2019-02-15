@@ -2,8 +2,11 @@
     <div class="navbar-fixed">
         <nav class="header2TopBar">
             <div class="nav-wrapper">
-                <ul class="right hide-on-med-and-down">
 
+
+
+
+                <ul class="right hide-on-med-and-down" *ngIf="!userInfo">
                     <div class="header2TopNavi">
                         <!-- <a href="/signup/" class="waves-effect waves-block black-text waves-light">SIGN UP FREE!</a> -->
                         <a href="/new_signup/" class="waves-effect waves-block black-text waves-light">SIGN UP FREE!</a>
@@ -13,8 +16,26 @@
                         <a href="/login/" class="waves-effect waves-block black-text waves-light">LOG IN</a>
                     </div>
                 </ul>
+
+                <ul class="right hide-on-med-and-down" *ngIf="userInfo">
+                    <div class="header2TopNavi">
+                        <a href="" class="waves-effect waves-block black-text waves-light" (click)="logout()">LOGOUT</a>
+                    </div>
+                    <div class="floatRight">|</div>
+                    <div class="header2TopNavi">
+                        <!-- <a href="/signup/" class="waves-effect waves-block black-text waves-light">SIGN UP FREE!</a> -->
+                        <a href="" class="waves-effect waves-block black-text waves-light">Hi
+                            {{userInfo[0].username}}</a>
+                    </div>
+                </ul>
+                <ul class="left">
+                    <li>
+                        <h1 class="logo-wrapper hide-on-large-only">
+                            <a href="/" class="brand-logo darken-1"></a>
+                            <span class="logo-text">AppTrack</span></h1>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
-    <!-- end header nav-->
 </header>
